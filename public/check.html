@@ -1,0 +1,173 @@
+
+<html>
+    <head>
+    <style>
+        
+        /* CSS to style the form */
+        body {
+            background-color: yellow;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid yellow;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(0, 157, 255);
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+
+        .btn:hover {
+            background-color: #ffd700;
+        }
+        .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-top: -44px;
+    margin-left: -30px;
+  }
+  .photo1{
+    
+    position: absolute;
+    top: 124%;
+    left: 33px;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    width: 350px;
+    height: 378px;
+        
+  }
+  .photo2{
+    
+    position: absolute;
+    top: 62%;
+    left: 600px;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    width: 350px;
+    height: 378px;
+      
+
+  }
+  .photo3{
+    
+    position: absolute;
+    top: 62%;
+    left: 1100px;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    width: 350px;
+    height: 378px;
+        
+  }
+  .text{
+    font-family:'Times New Roman', Times, serif ;
+    color:black;
+    text-align: center;
+    line-height: normal;
+    letter-spacing:0px;
+    word-spacing:0.5em;
+    
+    opacity: 0.8;
+    box-shadow: inset  0px 0px 10px rgba(0, 0, 0 , 0);
+    transition: all ease 0.3s;
+    
+  }
+  
+
+.photo1,
+.photo2,
+.photo3 {
+    filter: grayscale(0%);
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.photo1:hover,
+.photo2:hover,
+.photo3:hover {
+    transform: scale(1.1) rotate(360deg);
+    border: 4px solid rgb(0, 157, 255);
+    box-shadow: 0px 0px 20px rgba(0, 157, 255, 0.5);
+    filter: grayscale(0%);
+    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; 
+}
+
+
+.photo1:hover {
+    border-color: #ff9900; 
+}
+
+.photo2:hover {
+    border-color: #00cc66; 
+}
+
+.photo3:hover {
+    border-color: #ff6666;
+}
+.photo4 {
+        position: absolute;
+        top: 200%;
+        left: 33px;
+        transform: translateY(-50%);
+        border: 2px solid black;
+        width: 350px;
+        height: 378px;
+        filter: grayscale(0%);
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    
+    .photo4:hover {
+        transform: scale(1.1) rotate(360deg);
+        border: 4px solid rgb(0, 157, 255);
+        box-shadow: 0px 0px 20px rgba(0, 157, 255, 0.5);
+        filter: grayscale(0%);
+        transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+        border-color: #ff9900;
+    }
+
+
+
+
+    
+    </style>
+</head>
+<body>
+    <form action="/moviesearch" method="GET">
+        
+        <b><p class="text">Please provide the name of the movie for which you would like to receive details!</p></b>
+       <b> MovieName:</b>
+        <b><input type="text" placeholder="Enter movie name" name="movie" required=""></b>
+        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i>Search</button>
+        <img src="https://cdn.glitch.global/dba06abc-1c9b-4849-80a6-5dd073e6a516/logo_transparent.png?v=1692003699782" class="logo">
+        <a href="https://en.wikipedia.org/wiki/Vikram_(2022_film)"><img src="https://images.news18.com/ibnlive/uploads/2022/09/kamal-haasan-vikram-1.jpg" class="photo1"></a>
+        <a href="https://en.wikipedia.org/wiki/RRR"><img src="https://upload.wikimedia.org/wikipedia/hi/thumb/5/52/%E0%A4%B0%E0%A4%BE%E0%A4%87%E0%A4%9C%E0%A4%BC_%E0%A4%B0%E0%A5%8C%E0%A4%B0_%E0%A4%B0%E0%A4%BF%E0%A4%B5%E0%A5%8B%E0%A4%B2%E0%A5%8D%E0%A4%9F.jpeg/330px-%E0%A4%B0%E0%A4%BE%E0%A4%87%E0%A4%9C%E0%A4%BC_%E0%A4%B0%E0%A5%8C%E0%A4%B0_%E0%A4%B0%E0%A4%BF%E0%A4%B5%E0%A5%8B%E0%A4%B2%E0%A5%8D%E0%A4%9F.jpeg" class="photo2"></a>
+       <a href="https://en.wikipedia.org/wiki/K.G.F:_Chapter_1"> <img src="https://file.kreditings.com/uploads/preview/kgf-rocky-bhai-poster-editing-background-hd-11658222236zud2fooenm.jpg" class="photo3"></a>
+       <a href="https://en.wikipedia.org/wiki/Jailer_(2023_Tamil_film)"><img src="https://static.toiimg.com/photo/102602413.cms?imgsize=963075" class="photo1" style="top: 62%; left: 33px;"></a>
+    </form>
+</body>
+ </html>
+
+		

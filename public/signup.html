@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://4kwallpapers.com/images/wallpapers/pikachu-yellow-background-minimal-art-5k-8k-5120x2880-4405.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 140px;
+        }
+
+        .signup-form {
+            background-color: yellow; /* Updated color to yellow */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        .signup-form h1 {
+            text-align: center;
+        }
+
+        .signup-form input[type="text"],
+        .signup-form input[type="email"],
+        .signup-form input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .signup-form input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .signup-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-form p {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-top: -44px;
+    margin-left: -30px;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="signup-form">
+        <h1>Movie Signup Form</h1> 
+        <img src="https://cdn.glitch.global/dba06abc-1c9b-4849-80a6-5dd073e6a516/logo_transparent.png?v=1692003699782" class="logo">
+        <form  action="/signupSubmit" method="post">
+            Firstname:
+            <input type="text" name="Firstname" required /><br />
+            Lastname:
+            <input type="text" name="Lastname" required /><br />
+            Email Id:
+            <input type="email" name="Mail" required /><br />
+            Password:
+            <input type="password" name="Pass" req /><br />
+            <input type="submit" value="Submit">
+            <p>Already have an account? Click here <a href="/login">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

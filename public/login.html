@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eed706;
+            margin: 0;
+            padding: 0;
+            display: flex;
+           
+            align-items: center;
+            height: 100vh;
+            margin-left: 140px;
+            margin-top: 100px;
+        }
+
+        .login-form {
+            background-color: rgba(236, 218, 21, 0.897);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(241, 218, 6, 0.2);
+            width: 300px;
+            
+        }
+
+        .login-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #f3e708;
+            border-radius: 3px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .login-form p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        body{
+            background-image: url('https://media.istockphoto.com/id/1409271522/photo/the-mans-hands-are-holding-black-with-yellow-clapper-board-or-movie-slate-on-yellow-background.webp?b=1&s=170667a&w=0&k=20&c=vb-Ae8pOyZ3VwIJjqj5mv1gud1bWrntZxAsMFOIlEpc=');
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-top: -44px;
+    margin-left: -30px;
+  }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h1>Login Page</h1>
+        <form action="/loginsubmit" method="post" >
+            <img src="https://cdn.glitch.global/dba06abc-1c9b-4849-80a6-5dd073e6a516/logo_transparent.png?v=1692003699782" class="logo">
+            Email:
+            <input type="text" name="Email" required /><br />
+            Password:
+            <input type="password" name="Password" required /><br />
+            <input type="submit" value="Login">
+            
+            <p>Don't have an account? Click here <a href="/signup">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>
